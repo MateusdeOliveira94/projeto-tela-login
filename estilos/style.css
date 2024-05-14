@@ -26,14 +26,19 @@ html, body {
 main {
     width: 100vw;
     height: 100vh;
-    position: relative;
+    /*position: relative;*/
+    /*Usando flexbox:*/
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 section#login {
     background-color: rgba(255, 255, 255, 0.541);
-    position: absolute;    
+    /*position: absolute;    
     top: 50%;
-    left: 50%;    
+    left: 50%;*/    
     overflow: hidden; /*esconde tudo o q ultrapassar a borda da div*/
     
     width: 250px;
@@ -41,7 +46,8 @@ section#login {
     border-radius: 14px;
     box-shadow: 0px 0px 8px rgba(58, 40, 58, 0.308);
 
-    transform: translate(-50%, -50%); /*transiçao e tranform ficam por ultimo no seletor para evitar bugs*/
+    /*transiçao e tranform ficam por ultimo no seletor para evitar bugs*/
+    /*transform: translate(-50%, -50%);*/ 
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
